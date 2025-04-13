@@ -1,70 +1,82 @@
-Overview
+# Predicting Recidivism: Neural Networks vs Logistic Regression
 
-This project explores recidivism prediction using neural networks, achieving a 10% accuracy improvement over the COMPAS algorithm. It incorporates Recursive Feature Elimination (RFE) to enhance feature selection and reliability in predictive modeling for judicial decision-making.
+This repository contains the code, results, and extended essay for my IB Computer Science Extended Essay:
 
-Technologies Used
+**Research Question:**
+*"How far will a neural network model be more accurate in predicting recidivism than the logistic regression model used by COMPAS?"*
 
-Python
+---
 
-NumPy, Pandas
+## 📘 About
+Recidivism prediction is a critical task in criminal justice, used to assess the likelihood of a defendant re-offending. This project evaluates the performance of Neural Networks (NNs) compared to the Logistic Regression (LR) model employed by the COMPAS system, using a subset of the ProPublica Broward County dataset.
 
-Scikit-Learn
+The aim is to determine whether a Neural Network can offer measurable improvements over traditional Logistic Regression when predicting future criminal behavior.
 
-TensorFlow/PyTorch
+---
 
-Matplotlib, Seaborn
+## 📂 Repository Structure
 
-Dataset
+```
+predicting-recidivism-nn-vs-lr/
+├── README.md
+├── extended-essay.pdf
+├── data/
+│   └── compas_dataset_sample.csv (placeholder or simulated data)
+├── notebooks/
+│   └── compas_logistic_regression.ipynb
+│   └── compas_neural_network.ipynb
+│   └── rfe_feature_selection.ipynb
+├── src/
+│   └── logistic_regression.py
+│   └── neural_network.py
+│   └── feature_selection.py
+├── results/
+│   └── evaluation_metrics.csv
+│   └── model_comparison.png
+├── LICENSE
+└── requirements.txt
+```
 
-Due to privacy concerns, the full dataset is not included. However, a sample dataset and data preprocessing steps are provided.
+---
 
-Project Structure
+## 💻 How to Run
 
-Recidivism-Prediction/
-│-- data/                     # Sample datasets (if applicable)
-│-- notebooks/                 # Jupyter notebooks for analysis & training
-│-- models/                    # Trained model files (if small enough)
-│-- src/                       # Python scripts for preprocessing, training, and evaluation
-│   │-- preprocess.py          # Data preprocessing script
-│   │-- train.py               # Model training script
-│   │-- evaluate.py            # Model evaluation script
-│-- results/                    # Performance metrics, graphs, and visualizations
-│-- .gitignore                  # Ignore unnecessary files
-│-- requirements.txt            # Dependencies
-│-- README.md                   # Documentation
+1. Clone this repository:
+```bash
+git clone https://github.com/yourusername/predicting-recidivism-nn-vs-lr.git
+cd predicting-recidivism-nn-vs-lr
+```
 
-Installation & Usage
-
-# Clone the repository
-git clone https://github.com/your-username/Recidivism-Prediction.git
-
-# Install dependencies
+2. Install dependencies:
+```bash
 pip install -r requirements.txt
+```
 
-# Run the preprocessing script
-python src/preprocess.py
+3. Run experiments:
+- Open Jupyter Lab or Notebook.
+- Explore the code in the `/notebooks` folder to train models and reproduce results.
 
-# Train the model
-python src/train.py
+---
 
-# Evaluate the model
-python src/evaluate.py
+## 📊 Key Findings
+- Neural Networks improved F1 scores by approximately **2.8%** compared to Logistic Regression models.
+- Logistic Regression performed competitively when optimized with feature selection (RFE).
+- NN models, although more computationally expensive, can detect more nuanced patterns in the data.
 
-Results
+---
 
-Accuracy Improvement: 10% over COMPAS
+## ⚖️ License
+MIT License — feel free to use, modify, and distribute with proper citation.
 
-Feature Selection: Implemented Recursive Feature Elimination (RFE)
+---
 
-Visualization: Graphs showing model performance compared to COMPAS
+## 📚 References
+A full list of references is included in the `extended-essay.pdf`.
 
-Future Improvements
+---
 
-Test on larger datasets
+Thanks for exploring this research — feedback and suggestions are welcome!
 
-Improve model explainability
-
-Explore fairness constraints in predictions
 
 License
 
