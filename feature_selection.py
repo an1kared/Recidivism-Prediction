@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import precision_score, recall_score, f1_score
 
 # Load dataset (replace this path 
-data = pd.read_csv('data/compas_dataset_sample.csv')
+data = pd.read_csv('feature_selection.csv')
 
 # Define independent and dependent variables
 X = data.drop(columns=['two_year_recid'])  # Assuming 'two_year_recid' is the target
