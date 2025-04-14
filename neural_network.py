@@ -7,7 +7,7 @@ from tensorflow.keras.layers import Dense
 from sklearn.metrics import confusion_matrix, precision_score, recall_score, f1_score
 
 # Load dataset (replace this path with your actual CSV path)
-data = pd.read_csv('data/compas_dataset_sample.csv')
+data = pd.read_csv('compas-scores-two-years.csv')
 
 # Define independent and dependent variables
 X = data.drop(columns=['two_year_recid'])  # Assuming this is the target
