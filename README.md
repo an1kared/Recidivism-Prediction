@@ -41,10 +41,6 @@ pip install -r requirements.txt
 
 ---
 
-## ⚖️ License
-MIT License — feel free to use, modify, and distribute with proper citation.
-
----
 
 ## 📚 References
 A full list of references is included in the `extended-essay.pdf`.
