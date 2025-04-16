@@ -14,30 +14,6 @@ The aim is to determine whether a Neural Network can offer measurable improvemen
 
 ---
 
-## 📂 Repository Structure
-
-```
-predicting-recidivism-nn-vs-lr/
-├── README.md
-├── extended-essay.pdf
-├── data/
-│   └── compas_dataset_sample.csv (placeholder or simulated data)
-├── notebooks/
-│   └── compas_logistic_regression.ipynb
-│   └── compas_neural_network.ipynb
-│   └── rfe_feature_selection.ipynb
-├── src/
-│   └── logistic_regression.py
-│   └── neural_network.py
-│   └── feature_selection.py
-├── results/
-│   └── evaluation_metrics.csv
-│   └── model_comparison.png
-├── LICENSE
-└── requirements.txt
-```
-
----
 
 ## 💻 How to Run
 
