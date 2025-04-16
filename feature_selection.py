@@ -8,7 +8,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score
 data = pd.read_csv('feature_selection.csv')
 
 # Define independent and dependent variables
-X = data.drop(columns=['two_year_recid'])  # Assuming 'two_year_recid' is the target
+X = data.drop(columns=['two_year_recid'])
 y = data['two_year_recid']
 
 # Train-test split
