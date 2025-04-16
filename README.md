@@ -50,7 +50,3 @@ A full list of references is included in the `extended-essay.pdf`.
 Thanks for exploring this research — feedback and suggestions are welcome!
 
 
-License
-
-This project is for research purposes. If you use any part of this code, please provide attribution.
-
